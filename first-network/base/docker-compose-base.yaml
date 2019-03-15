@@ -40,6 +40,7 @@ services:
       file: peer-base.yaml
       service: peer-base
     environment:
+      - FABRIC_LOGGING_SPEC=INFO      
       - CORE_PEER_ID=peer0.org1.example.com
       - CORE_PEER_ADDRESS=peer0.org1.example.com:7051
       - CORE_PEER_LISTENADDRESS=0.0.0.0:7051

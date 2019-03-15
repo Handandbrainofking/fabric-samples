@@ -278,6 +278,7 @@ function networkDown() {
     rm -rf channel-artifacts/*.block channel-artifacts/*.tx crypto-config ./org3-artifacts/crypto-config/ channel-artifacts/org3.json
     # remove the docker-compose yaml file that was customized to the example
     rm -f docker-compose-e2e.yaml
+    rm -rf ./orgX-artifacts/crypto-config/ channel-artifacts/orgX.json ./orgY-artifacts/crypto-config/ channel-artifacts/orgY.json
   fi
 }
 
